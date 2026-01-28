@@ -28,10 +28,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Clear npm cache and install dependencies
         run: |
+          npm cache clean --force
           rm -rf node_modules
-          npm install --include=optional
+          npm install
 
       - name: Build
         run: npm run build
