@@ -67,7 +67,7 @@
       target: 'esnext',
       outDir: 'dist',
     },
-    base: '/',
+    base: '/FairwinLiCaseStudy.github.io/',
     server: {
       port: 3000,
       open: true,
